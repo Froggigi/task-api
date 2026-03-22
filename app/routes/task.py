@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from schemas import Task
+from app.schemas import Task
 
-router = APIRouter(prefix="/tasks")
+router = APIRouter(prefix="/tasks", tags=["Tasks"])
 
 tasks = []
 
